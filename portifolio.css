@@ -1,0 +1,731 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+@font-face {
+    font-family: "maquina-escrever";
+    src: url("fontes/JMH\ Typewriter.ttf")format("truetype");
+}
+html{
+   scroll-behavior: smooth;
+}
+body{
+    font-family: "Heebo";
+
+}
+/* seção sobre mim*/
+
+#about-me-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*flex-direction:column;*/
+    margin: 80px auto 0px;
+    width: 860px;
+
+}
+#about-me-section div h1 {
+    font-family: "maquina-escrever";
+    
+}
+#about-me-section div h2 {
+    font-family: "maquina-escrever";
+    color: #384772;
+}
+#div-me{
+  max-width: 860px;
+  margin:auto;
+}
+#div-me #btn {
+   
+    margin:  0 20px 20px 0 ;
+    cursor: pointer;
+    width: 100px;
+    padding:5px;
+    font-size: 15px;
+    font-family: "Heebo";
+    font-weight: bold;
+    border: none;
+    box-shadow: 1px 1px 5px blueviolet;
+    border-radius: 3px;
+}
+.me{
+    width: 65%;
+    display:none;
+    padding-bottom: 35px;
+}
+
+nav{
+    max-width:1095px;
+    display:flex;
+    justify-content:end;
+    margin: 30 auto 0;
+}
+nav a{
+    font-weight:700;
+    font-size:22px;
+    line-height:20px;
+    text-decoration:2px underline #384772;
+    color: rgb(42, 42, 42);
+    margin-left: 45px;
+    margin-bottom: 0px;
+    padding: 10px 0 20px 0 ;
+}
+
+@keyframes pulsar_title-nav{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+    0%{
+        transform: scale(1.0);
+    }
+}
+.nav-title:hover{
+    animation-name:pulsar_title-nav;
+    animation-duration:1.5s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: 7s;
+    animation-direction: alternate-reverse; 
+}
+/*#about-me-section div h1*/
+#about-me-section div h1{
+    font-size: 38px;
+    font-weight:bold;
+    line-height:50px;
+    
+    
+}
+#about-me-section .line-h2{
+    border-right:2px solid black;
+    font-size: 37.5px;
+    margin-bottom: 20px;
+    font-weight:bold;
+  
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 560px;
+}
+.h2-animacao-cursor{
+    animation: h2-cursor 600ms steps(45) infinite normal, h2-text 4s steps(45) 1s  normal both;
+}
+
+
+@keyframes h2-text{
+    from{
+        width:0;
+    }
+    to{
+     width:18em;
+    }
+  }
+@keyframes h2-cursor{
+  from{
+      border-right-color:rgba(0, 0, 0, 0.822) ;
+  }
+  to{
+    border-right-color:transparent ; 
+  }
+}
+
+#about-me-section div p{
+    width: 500px;
+    font-size: 16px;
+    line-height:23px;
+    margin-bottom: 15px;
+}
+#about-me-section div img{
+   width: 200px;
+   border: none;
+   border-radius: 50%;
+}
+
+#about-me-section div .social-network{
+   width: 50px;
+   margin: 15px 15px 0px 0px;
+ 
+ 
+}
+
+
+
+/* seção dos projetos*/
+#my-projects-section{
+   background: #384772;
+    padding: 0;
+   
+   
+    
+}
+#my-projects-section section h2{
+ color: #FFF;
+ padding-top: 10px;
+
+}
+#my-projects-section section{
+    margin: 0 auto ;
+   width: 860px;
+  
+  
+}
+  
+.project-container{
+    width: 860px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.project-video{
+    padding: 0px;
+    margin: 0px; 
+   
+  }
+
+.project-video video{
+    padding: 0px;
+    margin: 0px; 
+  height: 200px; 
+  border-radius: 6px; 
+}
+
+
+
+.project-container div{
+    background: #FFF;
+     width: 49%;
+     margin: 0 0 20px 0;
+     border-radius: 6px;
+     padding-bottom:16px ;
+}
+.project-container div a{
+   text-decoration: none;
+   color: #000;
+}
+
+.project-container .button{
+    margin: auto;
+    display: flex; 
+    position: relative;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 15px;
+    font-family: "Heebo";
+    font-weight: bold;
+    border: none;
+    box-shadow: 1px 1px 5px blueviolet;
+    border-radius: 3px;
+}
+.html-color{
+  color:orangered ;
+}
+.css-color{
+  color:blue ;  
+}
+.js-color{
+  color:rgba(245, 245, 23, 0.966) ;  
+}
+
+@keyframes pulsar_button{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.9);
+    }
+  
+}
+.button:hover{
+    
+    animation-name:pulsar_button;
+    animation-duration:0.3s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: 7s;
+    animation-direction: alternate-reverse;
+    
+}
+.button:active{
+    color: wheat;
+    background: rgba(81, 202, 233, 0.856);
+}
+
+.project-container div div{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position-x: center;
+    background-position-y: center;
+
+}
+
+.project-container div h3{
+  font-size: 24px;
+font-weight:bold ;
+margin:5px 0 9px 23px;
+  
+   
+}
+.project-container div p{
+font-size:16px ;
+font-weight:bold ;
+margin:14px 0 9px 23px;
+} 
+
+/* seção da formação*/
+#btn-formacao{
+    cursor: pointer;
+    margin: 0 auto 40px;
+    display: block;
+    border: none;
+    border-radius: 3px;
+    background:none;
+    padding: 3px;
+    animation: pulse-btn 1.8s ease-in infinite;
+}
+
+@keyframes pulse-btn{
+  from{
+      box-shadow: 0 0 0px 0px ;
+  }
+
+   to{
+       box-shadow: 0 0 0 4px blueviolet;
+   } 
+}
+
+#formacao{
+    display:none;
+    
+}
+#skills{
+    padding: 20px;
+}
+#skills-container div{
+    background: #c5cbdb;
+}
+#skills-container .h2-habili{
+
+  margin: 30px 0 10px ; 
+}
+#skills-container #formacao {
+    width: 860px;
+    margin: auto;
+    background: #c5cbdb;
+}
+
+#skills-container #formacao li{
+    display: flex;
+    align-items: center;
+    margin:0 15px ;
+    padding-bottom: 20px;
+ }
+ #formacao img{
+  padding: 0 10px;
+}
+#formacao h4{
+    padding-top: 10px;
+    margin: 0 0 10px 10px;
+}
+
+/* seção das habilidades*/
+
+#skills-container{
+    margin-top: 80px;
+  /*width: 100%;*/
+}
+#skills-container h2{
+    font-size: 24px;
+    padding: 1px;
+    text-align: center;
+}
+#skills-container #skills{
+   /* margin: 5px auto ;*/
+    width:100%;
+    display: flex;
+    justify-content:center;
+    background: #384772;
+    /*padding: 10px 0;*/
+   
+  
+
+}
+#skills-container  div img{
+    width: 70px;
+
+   
+}
+#skills-container  div img + img{/* se tiver uma img que precede outra img,sera aplicado esse codigo*/
+  margin-left: 25px;
+}
+
+
+
+/*seção do contato*/
+
+#footer-contact{
+ margin: 50px auto 20px;
+}
+#footer-contact hr{
+    margin: auto;
+    width: 860px;
+    border-top: 1px solid #E0E0E0;
+}
+#footer-contact h2{
+    margin-top: 20px;
+    font-size: 24px;
+    padding-bottom: 6px;
+    text-align: center;
+}
+#footer-contact div{
+    margin: 5px auto ;
+    width:100%;
+    display: flex;
+    justify-content:center;
+    padding: 10px 0;
+    margin: 5px auto 5px;
+    padding: 10px 0;
+}
+
+
+#footer-contact div .social-network{
+    width: 45px;
+    margin: 0 6px 0 6px;
+   
+
+}
+@keyframes pulsar_icone-social{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+    0%{
+        transform: scale(1.0);
+    }
+}
+.social-network:hover{
+    animation-name:pulsar_icone-social;
+    animation-duration:1.5s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: 7s;
+    animation-direction: alternate-reverse;
+    
+}
+.email p{
+    color:#384772 ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    
+}
+.email p a{
+    text-decoration: none;
+}
+.email p a:hover{
+   color:#384772 ;
+}
+
+
+/*responsividade*/
+
+@media(max-width: 580px){
+    
+     /*  body{
+           box-shadow:1px 2px 4px black inset;
+       } */                                                                                                        @keyframes anima-body {
+      0%{
+          background-position:0% 50% ;
+      } 
+      50%{
+        background-position:100% 50% ;
+      } 
+      100%{
+        background-position:0% 50% ;
+      }  
+}                                                                                                                    
+    nav{
+        width:100%;
+        margin: auto;
+       text-align: center;
+    }
+    nav a {
+        font-size: 15px;
+        font-weight: bolder;
+        text-align: center;
+        margin: 10px auto 30px;
+        
+    }
+    #about-me-section{
+        margin: auto;
+        margin-top: 5px;
+        align-items: center;
+        flex-direction: column-reverse;
+        max-width: 325px;
+        /*width:100%;*/
+    }
+    #about-me-section div{
+       text-align: center;
+       width:100%;
+    }
+    #div-me{
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     width:100%;
+     height:100%;
+     margin:0px ;
+    }
+    #div-me #btn{
+        font-weight: 600;
+        border-radius: 3px;
+        border: none;
+        color: #384772;
+        box-shadow: 1px 1px 5px blueviolet;
+        font-size: 16px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        width: 100px;
+        padding: 4px;
+      
+    }
+    .me p{
+        
+       
+        word-spacing:1px;
+        font-size: 17.5px;
+        text-align:left;
+    }
+    .me{
+        margin:10px auto  ;
+       width: 90%;
+       text-align: center;
+    }
+    #about-me-section div h1{
+        line-height: 30px;
+        font-size: 22px;
+        margin-bottom:11px;
+        text-align: center;
+        
+    }
+
+    #about-me-section .line-h2{
+        margin:0 auto 25px;
+       font-size: 20.5px;
+    word-spacing:-5px;
+       max-width: 300px;
+       color: rgba(6, 54, 212, 0.52);
+    }
+  
+    #about-me-section div img{
+        width: 170px;
+        height:170px ;
+        margin-bottom: 28px;
+        box-shadow: 1px 1px 2px black;
+       
+     }
+     #my-projects-section{
+        background-color: rgba(6, 54, 212, 0.52);
+        width:95%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        border-radius: 2px;
+        margin-top: 20px;
+         
+     }
+     #my-projects-section section h2{
+         font-size: 22px;
+         text-align: center;
+         padding: 10px 0;
+        
+     }
+     .project-container{
+        margin: auto;
+        width:90%;
+         display: flex;
+         flex-wrap: wrap;
+        
+     }
+     .project-container div{
+        
+        width:100%;
+         margin-right: auto;
+         margin-left: auto;
+    }
+
+    .project-container .shadow{
+        box-shadow: 1px 3px 5px black;
+     
+    }
+     .project-container div h3{
+         font-size: 22px;
+         text-align:center;
+         margin:0 auto 5px;
+     }
+     
+     .project-container div p{
+        font-size: 16px;
+        max-width: 314px;
+        text-align:center;
+        margin:0 auto 15px;
+    }
+
+    /* seção da formação*/
+
+    #skills-container div{
+      margin: 30px 10px;
+      background-color:white ;
+    }
+    #skills-container #formacao {
+        width:100%;
+        border-radius: 3px;
+        background-image:linear-gradient(45deg,rgba(0, 206, 209, 0.137),rgba(0, 206, 209, 0.26),rgba(140, 206, 223, 0.829));
+        
+        box-shadow: 1px 3px 5px black;
+    }
+    #skills-container #formacao h4{
+     padding-top: 10px;
+     letter-spacing: 2px;
+    }
+    #skills-container #formacao li {
+        display: flex;
+        align-items:center;
+        padding: 0 0 15px 0px;
+      
+     }
+     #skills-container #formacao li img { 
+        align-items:center;
+        margin:0 10px 0 0;
+     }
+
+  /*seção das habilidades*/
+    #skills-container h2{
+        font-size:24px;
+
+    }
+    #skills-container #skills{
+        margin: 5px auto;
+        background-color: rgba(6, 54, 212, 0.52);
+       flex-wrap:wrap;
+       padding:4px 0px 34px;
+
+    }
+    #skills-container img, #skills-container div img + img{
+        margin: 20px 38px 0;
+
+    }
+    #footer-contact{
+        max-width: 400px;  
+    }
+    #footer-contact div a img{
+        margin: 15px;
+        align-items: center;
+        border-radius: 50%;
+        animation: pulse-btn 1.7s ease-in infinite;
+    }
+    #footer-contact hr{
+        margin: auto;
+        width: 300px;
+        border-top: 1px solid #c3c1c1;
+    }
+    
+}
+
+@media(min-width: 581px ) and (max-width: 860px ){
+    body{
+        width: 860px;
+    }
+    header nav {
+       display: flex;
+       justify-content: center;
+       margin: auto;
+    }
+
+    #about-me-section div{
+        
+        margin: 20px;
+    }
+    #about-me-section div h2{
+       color:#384772;
+    }
+    #my-projects-section{
+        width: 860px;
+        margin: 0 auto;
+      
+    }
+    #my-projects-section h2{
+      padding:10px 0 0 20px;
+    }
+    .project-container{
+        margin:auto;
+        padding: 20px;
+    }
+    .me{
+
+        width: 75%;
+        display:none;
+       margin: 0 0 15px 15px ;
+    }
+    .me p{
+        font-size: 20px;
+    
+        word-spacing:1px;
+        text-align:left;
+        
+    }
+   
+    #div-me #btn {
+        width: 120px;
+        font-size: 19px;
+        margin: 0 0 15px 15px;
+    }
+
+   /*seção formação*/
+
+    #btn-formacao{
+        margin-bottom: 30px;
+    }
+    #formacao h4{
+        padding-top: 10px;
+    }
+    #formacao img{
+      margin: 0 15px 0 0;
+    }
+  /*seção habilidades*/
+    #skills-container{
+        width: 860px;
+        margin: 60px auto;
+    }
+    #skills-container div li{
+      padding-bottom: 10px;
+    }
+    #skills-container h2{
+     /* padding: 10px;*/
+    }
+    #skills{
+        padding: 15px;
+    }
+  /*seção me encontre*/
+
+  #footer-contact{
+      width:860px;
+  }
+  #footer-contact div a img{
+    margin: 10px;
+    align-items: center;
+    border-radius: 50%;
+    animation: pulse-btn 1.8s ease-in infinite;
+}
+}
+
+
+
+
+
