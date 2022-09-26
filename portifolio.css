@@ -540,7 +540,7 @@ margin:14px 0 9px 23px;
 }
 
 .me  p{
-        height:90%;
+        height:100%;
         word-spacing:1px;
         font-size: 17.5px;
         text-align:left; 
@@ -597,14 +597,13 @@ margin:14px 0 9px 23px;
         flex-wrap: wrap;
         margin: auto;
         border-radius: 5px;
-        margin-top: 20px;
         animation: corFundo 25s ease-in-out infinite; 
      }
      @keyframes corFundo {
         0%{background-color: #3acece;}
        3%{background-color: rgb(0, 255, 238);} 
-       5%{background-color: #4bb38d;} 
-       15%{background-color: rgb(140, 237, 127);}
+       5%{background-color: #4bb3a5;} 
+       15%{background-color: rgb(164, 238, 154);}
        25%{background-color: aqua;}
        35%{background-color: rgb(164, 238, 202);}
        42%{background-color: rgb(100, 164, 215);}
