@@ -50,10 +50,6 @@ body{
     background-color: rgb(228, 228, 194); 
    
 }
-#btn:hover{
-    color:white;
-    background-color:blueviolet;
-}
 
 #div-me{
   width: 65%;
@@ -73,7 +69,7 @@ body{
 .active{
    
     width: 65%;
-    background-color: #C5CBDB;
+   
     margin-bottom: 15px;
    height:220px;
    transition: 1s;
@@ -539,7 +535,8 @@ margin:14px 0 9px 23px;
         margin-bottom: 10px;
         cursor: pointer;
         width: 100px;
-        padding: 4px;      
+        padding: 4px; 
+        background-color: beige;     
 }
 
 .me  p{
@@ -559,15 +556,14 @@ margin:14px 0 9px 23px;
 
 .active {
     width: 95%;
-    background-color: #C5CBDB;
     margin-bottom: 15px;
-    height: 370px;
+    height:360px;
     transition: 1.2s ease-in;
-    padding: 10px;
+    padding: 8px;
     border-radius: 4px;
     text-align: center;
     margin-top: 8px;
-    box-shadow: 1px 2px 6px black;
+    
 }
 
 
@@ -602,22 +598,23 @@ margin:14px 0 9px 23px;
         margin: auto;
         border-radius: 5px;
         margin-top: 20px;
-        animation: corFundo 23.5s ease-in-out infinite; 
+        animation: corFundo 25s ease-in-out infinite; 
      }
      @keyframes corFundo {
-       0%{background-color: orangered;} 
-       5%{background-color: #384772;} 
-       15%{background-color: #000;}
+        0%{background-color: #4e5b80;}
+       3%{background-color: rgb(0, 255, 238);} 
+       5%{background-color: #4b67b3;} 
+       15%{background-color: rgb(140, 237, 127);}
        25%{background-color: aqua;}
-       35%{background-color: crimson;}
-       42%{background-color: lime;}
-       50%{background-color: burlywood;}
-       65%{background-color: gold;}
-       70%{background-color: aliceblue;}
-       75%{background-color: deeppink;}
-       90%{background-color: goldenrod;}
-       100%{background-color:#384772 ;}
-        
+       35%{background-color: rgb(164, 238, 202);}
+       42%{background-color: rgb(0, 140, 255);}
+       50%{background-color: rgb(135, 222, 173);}
+       65%{background-color: rgba(149, 183, 233, 0.461);}
+       70%{background-color: rgb(94, 209, 217);}
+       75%{background-color: rgb(58, 84, 114);}
+       90%{background-color: rgb(32, 218, 156);}
+       95%{background-color: aquamarine;}
+       100%{background-color:#34b668 ;}  
      }
      #my-projects-section section h2{
          font-size: 22px;
@@ -745,19 +742,21 @@ margin:14px 0 9px 23px;
         animation: corFundo 26s ease-in-out infinite; 
     }
     @keyframes corFundo {
-        0%{background-color: orangered;} 
-        5%{background-color: #384772;} 
-        15%{background-color: #000;}
-        25%{background-color: aqua;}
-        35%{background-color: crimson;}
-        42%{background-color: lime;}
-        50%{background-color: burlywood;}
-        65%{background-color: gold;}
-        70%{background-color: aliceblue;}
-        75%{background-color: deeppink;}
-        90%{background-color: goldenrod;}
-        100%{background-color:#384772 ;}
-    }
+        0%{background-color: #4e5b80;}
+       3%{background-color: rgb(0, 255, 238);} 
+       5%{background-color: #4b67b3;} 
+       15%{background-color: rgb(140, 237, 127);}
+       25%{background-color: aqua;}
+       35%{background-color: rgb(164, 238, 202);}
+       42%{background-color: rgb(0, 140, 255);}
+       50%{background-color: rgb(135, 222, 173);}
+       65%{background-color: rgba(74, 119, 187, 0.461);}
+       70%{background-color: rgb(94, 209, 217);}
+       75%{background-color: rgb(58, 84, 114);}
+       90%{background-color: rgb(32, 218, 156);}
+       95%{background-color: aquamarine;}
+       100%{background-color:#384772 ;}  
+     }
     #my-projects-section h2{
       padding:10px 0 0 20px;
     }
@@ -773,13 +772,11 @@ margin:14px 0 9px 23px;
     }
     .active {
         width: 95%;
-        background-color: #C5CBDB;
         margin-bottom: 15px;
         height: 220px;
         transition: 0.6s ease-in-out;
         padding: 10px 0px 0px 10px;
         margin-left: 13px;
-      
         border-radius: 4px;
         text-align: center;
     }
