@@ -525,6 +525,7 @@ margin:14px 0 9px 23px;
     /*height: 100%;*/
      margin:0px ;
     }
+
     #btn{
         font-weight: 600;
         border-radius: 3px;
@@ -532,7 +533,7 @@ margin:14px 0 9px 23px;
         color: #384772;
         box-shadow: 1px 1px 5px blueviolet;
         font-size: 16px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         cursor: pointer;
         width: 100px;
         padding: 4px; 
@@ -542,14 +543,14 @@ margin:14px 0 9px 23px;
 .me  p{
         height:100%;
         word-spacing:1px;
-        font-size: 17.5px;
+        font-size: 17.65px;
         text-align:left; 
         margin-top: 5px;   
 }
 #me .me{
        /* height: 100%;*/
         margin:0px auto  ;
-       width: 90%;
+       
        text-align: center;     
 }
     
@@ -557,11 +558,11 @@ margin:14px 0 9px 23px;
 .active {
     width: 95%;
    margin-top: 20px;
-    height:360px;
-    transition: 1.2s ease-in;
-    padding: 8px;
+    height:358px;
+    transition: 1.1s ease-in;
+    padding: 0px 8px 0px 8px;
     border-radius: 4px;
-    text-align: center;
+    text-align:left;
     margin-top: 8px;
     
 }
