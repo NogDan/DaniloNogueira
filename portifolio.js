@@ -1,28 +1,21 @@
-var btn = document.querySelector('#btn');
-var sobre = document.querySelector('.me');
-var btnF = document.querySelector('#btn-formacao');
-var formacao = document.querySelector('#formacao');
 
 
-btn.addEventListener('click', function(){
 
-    if(sobre.style.display === 'none'){
-      sobre.style.display ='block' 
-    }else{
-        sobre.style.display ='none'
-    }
+
+function btn(id){
   
-    
-  }); 
+
+  let conteudo = document.querySelector(id);
+  conteudo.classList.toggle('active');
 
 
-  btnF.addEventListener('click', function(){
+}
 
-    if(formacao.style.display === 'none'){
-      formacao.style.display ='block' 
-    }else{
-        formacao.style.display ='none'
-    }
+function btn2(id){
   
-    
-  }); 
+
+  let conteudo = document.querySelector(id);
+  conteudo.classList.toggle('activeFormacao');
+
+
+}

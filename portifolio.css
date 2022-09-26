@@ -12,6 +12,7 @@ html{
 }
 body{
     font-family: "Heebo";
+    
 
 }
 /* seção sobre mim*/
@@ -33,27 +34,51 @@ body{
     font-family: "maquina-escrever";
     color: #384772;
 }
-#div-me{
-  max-width: 860px;
-  margin:auto;
-}
-#div-me #btn {
+ #btn {
    
     margin:  0 20px 20px 0 ;
     cursor: pointer;
     width: 100px;
     padding:5px;
-    font-size: 15px;
+    font-size: 16px;
     font-family: "Heebo";
     font-weight: bold;
     border: none;
-    box-shadow: 1px 1px 5px blueviolet;
-    border-radius: 3px;
+    color: blueviolet;
+    box-shadow: 1px 2px 5px blueviolet;
+    border-radius: 3px; 
+    background-color: rgb(228, 228, 194); 
+   
 }
-.me{
+#btn:hover{
+    color:white;
+    background-color:blueviolet;
+}
+
+#div-me{
+  width: 65%;
+  max-width: 860px;
+  margin:auto;
+ 
+
+ 
+}
+
+.me {
+    height: 0px;
     width: 65%;
-    display:none;
-    padding-bottom: 35px;
+    
+    overflow: hidden;
+}
+.active{
+   
+    width: 65%;
+    background-color: #C5CBDB;
+    margin-bottom: 15px;
+   height:220px;
+   transition: 1s;
+   padding: 10px;
+   border-radius: 4px;
 }
 
 nav{
@@ -61,12 +86,13 @@ nav{
     display:flex;
     justify-content:end;
     margin: 30 auto 0;
+    
 }
 nav a{
     font-weight:700;
     font-size:22px;
     line-height:20px;
-    text-decoration:2px underline #384772;
+    text-decoration:none;
     color: rgb(42, 42, 42);
     margin-left: 45px;
     margin-bottom: 0px;
@@ -277,32 +303,53 @@ font-weight:bold ;
 margin:14px 0 9px 23px;
 } 
 
-/* seção da formação*/
+/****** seção da formação *******/
+
 #btn-formacao{
     cursor: pointer;
     margin: 0 auto 40px;
-    display: block;
+    display: flow-root;
     border: none;
-    border-radius: 3px;
+    border-radius: 6px;
     background:none;
     padding: 3px;
-    animation: pulse-btn 1.8s ease-in infinite;
+    animation: pulse-btn 1.7s ease-in infinite;
 }
 
 @keyframes pulse-btn{
   from{
       box-shadow: 0 0 0px 0px ;
+      
   }
 
    to{
-       box-shadow: 0 0 0 4px blueviolet;
+       box-shadow: 0 0 0 5px blueviolet;
+       
+   }
+   to{
+    background-color: rgba(137, 43, 226, 0.361);
+    
+    
    } 
 }
-
-#formacao{
-    display:none;
+.formacao{
+    height: 0px;
+    width: 65%;
     
+    overflow: hidden;
 }
+.activeFormacao{
+   
+    width: 65%;
+    background-color: darkgrey;
+    margin-bottom: 15px;
+   height:450px;
+   transition: 1s;
+   padding: 20px;
+   border-radius: 4px;
+   box-shadow: 1px 2px 8px black;
+}
+
 #skills{
     padding: 20px;
 }
@@ -472,6 +519,7 @@ margin:14px 0 9px 23px;
     #about-me-section div{
        text-align: center;
        width:100%;
+      
     }
     #div-me{
      display: flex;
@@ -481,7 +529,7 @@ margin:14px 0 9px 23px;
      height:100%;
      margin:0px ;
     }
-    #div-me #btn{
+    #btn{
         font-weight: 600;
         border-radius: 3px;
         border: none;
@@ -491,28 +539,45 @@ margin:14px 0 9px 23px;
         margin-bottom: 10px;
         cursor: pointer;
         width: 100px;
-        padding: 4px;
-      
-    }
-    .me p{
-        
-       
+        padding: 4px;      
+}
+
+.me  p{
+        height:100%;
         word-spacing:1px;
         font-size: 17.5px;
-        text-align:left;
-    }
-    .me{
+        text-align:left; 
+        margin-top: 5px;   
+}
+#me .me{
+        height: 100%;
         margin:10px auto  ;
        width: 90%;
-       text-align: center;
-    }
-    #about-me-section div h1{
+       text-align: center;     
+}
+    
+
+.active {
+    width: 95%;
+    background-color: #C5CBDB;
+    margin-bottom: 15px;
+    height: 420px;
+    transition: 1.2s ease-in;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 8px;
+    box-shadow: 1px 2px 6px black;
+}
+
+
+#about-me-section div h1{
         line-height: 30px;
         font-size: 22px;
         margin-bottom:11px;
         text-align: center;
         
-    }
+}
 
     #about-me-section .line-h2{
         margin:0 auto 25px;
@@ -530,15 +595,29 @@ margin:14px 0 9px 23px;
        
      }
      #my-projects-section{
-        background-color: rgba(6, 54, 212, 0.52);
         width:95%;
         height: 100%;
         display: flex;
         flex-wrap: wrap;
         margin: auto;
-        border-radius: 2px;
+        border-radius: 5px;
         margin-top: 20px;
-         
+        animation: corFundo 23.5s ease-in-out infinite; 
+     }
+     @keyframes corFundo {
+       0%{background-color: orangered;} 
+       5%{background-color: #384772;} 
+       15%{background-color: #000;}
+       25%{background-color: aqua;}
+       35%{background-color: crimson;}
+       42%{background-color: lime;}
+       50%{background-color: burlywood;}
+       65%{background-color: gold;}
+       70%{background-color: aliceblue;}
+       75%{background-color: deeppink;}
+       90%{background-color: goldenrod;}
+       100%{background-color:#384772 ;}
+        
      }
      #my-projects-section section h2{
          font-size: 22px;
@@ -578,26 +657,31 @@ margin:14px 0 9px 23px;
     }
 
     /* seção da formação*/
-
-    #skills-container div{
+  
+    #formacao{
       margin: 30px 10px;
-      background-color:white ;
+     
+  
+      
     }
     #skills-container #formacao {
-        width:100%;
-        border-radius: 3px;
-        background-image:linear-gradient(45deg,rgba(0, 206, 209, 0.137),rgba(0, 206, 209, 0.26),rgba(140, 206, 223, 0.829));
+      
+      width: 95%;
+      padding: 0;
+      border-radius: 3px;
+        background-image:linear-gradient(45deg,rgba(0, 206, 209, 0.137),rgba(0, 209, 185, 0.368),rgba(140, 206, 223, 0.829));
         
         box-shadow: 1px 3px 5px black;
     }
     #skills-container #formacao h4{
-     padding-top: 10px;
+     padding-top: 7px;
      letter-spacing: 2px;
     }
     #skills-container #formacao li {
         display: flex;
         align-items:center;
         padding: 0 0 15px 0px;
+      
       
      }
      #skills-container #formacao li img { 
@@ -658,7 +742,21 @@ margin:14px 0 9px 23px;
     #my-projects-section{
         width: 860px;
         margin: 0 auto;
-      
+        animation: corFundo 26s ease-in-out infinite; 
+    }
+    @keyframes corFundo {
+        0%{background-color: orangered;} 
+        5%{background-color: #384772;} 
+        15%{background-color: #000;}
+        25%{background-color: aqua;}
+        35%{background-color: crimson;}
+        42%{background-color: lime;}
+        50%{background-color: burlywood;}
+        65%{background-color: gold;}
+        70%{background-color: aliceblue;}
+        75%{background-color: deeppink;}
+        90%{background-color: goldenrod;}
+        100%{background-color:#384772 ;}
     }
     #my-projects-section h2{
       padding:10px 0 0 20px;
@@ -667,7 +765,25 @@ margin:14px 0 9px 23px;
         margin:auto;
         padding: 20px;
     }
-    .me{
+    #div-me {
+         width:100%; 
+
+         max-width: 860px; 
+         margin: auto; 
+    }
+    .active {
+        width: 95%;
+        background-color: #C5CBDB;
+        margin-bottom: 15px;
+        height: 300px;
+        transition: 0.6s ease-in-out;
+        padding: 10px 0px 0px 10px;
+        margin-left: 13px;
+      
+        border-radius: 4px;
+        text-align: center;
+    }
+    #me .me{
 
         width: 75%;
         display:none;
@@ -685,6 +801,7 @@ margin:14px 0 9px 23px;
         width: 120px;
         font-size: 19px;
         margin: 0 0 15px 15px;
+      
     }
 
    /*seção formação*/

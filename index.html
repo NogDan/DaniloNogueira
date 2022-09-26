@@ -57,10 +57,10 @@
     </div>
 
   </section>
-
+  
   <div id="div-me">
-    <button id="btn">Sobre mim</button>
-    <div class="me">
+    <button id="btn" onclick="btn('#me')">Sobre mim</button>
+    <div class="me" id="me">
       <p>Moro em Santo André/SP Sou formado em Análise e desenvolvimento de sistemas pela CUFSA(Centro Universitário
         Fundação Santo André) e estou estudando desenvolvimento Front End área pela qual criei uma paixão, ja realizei
         alguns cursos pela Udemy e estou em andamento no curso de desenvolvimento Full-Stack do ProgramadorBr, sigo em
@@ -135,9 +135,12 @@
     </section>
   </section>
 
+
+
+
   <section id="skills-container">
 
-    <button id="btn-formacao">
+    <button id="btn-formacao"   onclick="btn2('#formacao')">
 
       <h2>Formação</h2>
 
@@ -145,8 +148,8 @@
 
 
 
-    <div>
-      <ul id="formacao">
+    <div class="formacao" id="formacao">
+      <ul>
         <h4>Superior</h4>
         <li>
           <img src="imagens/fsa-removebg-preview.png" alt="fsa">
