@@ -70,7 +70,7 @@ body{
    
     width: 65%;
    
-    margin-bottom: 5px;
+    margin-bottom: 0px;
    height: 222px;
    transition: 1s;
   
@@ -543,7 +543,7 @@ margin:14px 0 9px 23px;
 .me  p{
         height:100%;
         word-spacing:1px;
-        font-size: 17.65px;
+        font-size: 17.68px;
         text-align:left; 
         margin-top: 5px;   
 }
